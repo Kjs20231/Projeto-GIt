@@ -57,6 +57,43 @@ leia(menu)
  fimse
  fimprocedimento
 
+procedimento menujogador
+inicio 
+ escreval ("|------------------------------------------------------------------|")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|           ||\)     (/|| ||||||| ||\\    || ||    ||              |")
+ escreval ("|           || \)   (/ || |||     || \\   || ||    ||              |")
+ escreval ("|           ||  \) (/  || ||||||| ||  \\  || ||    ||              |")
+ escreval ("|           ||   \|/   || ||      ||   \\ || ||    ||              |")
+ escreval ("|           ||         || ||||||| ||    \\|| ||||||||              |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escrevaL ("|------------------------------------------------------------------|")
+ escreval ("|                        |1|  UM JOGADOR                                |")
+ escreval ("|                        |2|  DOIS JOGARORES                             |")
+ escreval ("|                        |3|  RETORNAR <-                             |")
+ escreval ("|------------------------------------------------------------------|")
+leia(jogador)
+fimprocedimento
+
+procedimento loop
+inicio
+
+//procedimento menu dos jogadores 
+menujogador
+
+//adiconar mais um jogador//
+se (jogador = 3) entao
+enquanto (menu <> 1) faca 
+ menuprincipal
+comojogar
+fimenquanto
+ fimse
+fimprocedimento
+
 Inicio
 
 
@@ -103,25 +140,9 @@ enquanto (menu <> 1) faca
 comojogar
 fimenquanto
 
- escreval ("|------------------------------------------------------------------|")
- escreval ("|                                                                  |")
- escreval ("|                                                                  |")
- escreval ("|                                                                  |")
- escreval ("|           ||\)     (/|| ||||||| ||\\    || ||    ||              |")
- escreval ("|           || \)   (/ || |||     || \\   || ||    ||              |")
- escreval ("|           ||  \) (/  || ||||||| ||  \\  || ||    ||              |")
- escreval ("|           ||   \|/   || ||      ||   \\ || ||    ||              |")
- escreval ("|           ||         || ||||||| ||    \\|| ||||||||              |")
- escreval ("|                                                                  |")
- escreval ("|                                                                  |")
- escreval ("|                                                                  |")
- escrevaL ("|------------------------------------------------------------------|")
- escreval ("|                        |1|  UM JOGADOR                                |")
- escreval ("|                        |2|  DOIS JOGARORES                             |")
- escreval ("|                        |3|  RETORNAR <-                             |")
- escreval ("|------------------------------------------------------------------|")
-leia(jogador)
-
+enquanto (menu = 1) faca
+//procedimento menu dos jogadores 
+menujogador
 //adiconar mais um jogador//
 se (jogador = 3) entao
 enquanto (menu <> 1) faca 
@@ -129,6 +150,8 @@ enquanto (menu <> 1) faca
 comojogar
 fimenquanto
  fimse
+fimenquanto
+
 
 //Dessa mensagem pra cima , ainda falta mexer//
 
