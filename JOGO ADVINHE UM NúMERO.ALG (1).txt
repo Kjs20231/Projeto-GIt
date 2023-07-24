@@ -98,41 +98,10 @@ tempo 60
  leia(teste)
  limpatela
 
+enquanto (menu <> 1) faca 
  menuprincipal
-
- se (menu = 2) entao
-   escreval(" +-----------+-------------------------+----------+         ")
-   escreval("             Â¦                         Â¦                    ")
-   escreval("             Â¦     COMO JOGAR   Â¦                    ")
-   escreval("             Â¦                         Â¦                    ")
-   escreval("             +-------------------------+                    ")
-     //TECLE QUALQUER TECLA PARA RETORNAR
-   leia(teste)
-   limpatela
-   menuprincipal
-   enquanto menu <> 1 faca
-   comojogar
-   menuprincipal
-   comojogar
-   fimenquanto
-   fimse
-
- se (menu = 3) entao
-   escreval(" +-----------+-------------------------+----------+         ")
-   escreval("             Â¦                         Â¦                    ")
-   escreval("             Â¦     CREDITOS    Â¦                    ")
-   escreval("             Â¦                         Â¦                    ")
-   escreval("             +-------------------------+                    ")
-        //TECLE QUALQUER TECLA PARA RETORNAR
-   leia(teste)
-   limpatela
-   menuprincipal
-    enquanto menu <> 1 faca
-   comojogar
-   menuprincipal
-   comojogar
-   fimenquanto
- fimse
+comojogar
+fimenquanto
 
  escreval ("|------------------------------------------------------------------|")
  escreval ("|                                                                  |")
