@@ -124,11 +124,10 @@ leia(jogador)
 
 //adiconar mais um jogador//
 se (jogador = 3) entao
-menuprincipal
-    enquanto menu <> 1 faca
-   comojogar
-   menuprincipal
-   fimenquanto
+enquanto (menu <> 1) faca 
+ menuprincipal
+comojogar
+fimenquanto
  fimse
 
 //Dessa mensagem pra cima , ainda falta mexer//
