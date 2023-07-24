@@ -136,6 +136,7 @@ tempo 60
  limpatela
 
 enquanto (menu <> 1) faca 
+enquanto (menu <> 1) faca 
  menuprincipal
 comojogar
 fimenquanto
@@ -146,6 +147,7 @@ enquanto (menu = 1) faca
 menujogador
 //adiconar mais um jogador//
 se (jogador = 3) entao
+menuprincipal 
 enquanto (menu <> 1) faca 
  menuprincipal
 comojogar
