@@ -140,6 +140,7 @@ enquanto (menu <> 1) faca
 comojogar
 fimenquanto
 
+repita
 enquanto (menu = 1) faca
 //procedimento menu dos jogadores 
 menujogador
@@ -149,9 +150,12 @@ enquanto (menu <> 1) faca
  menuprincipal
 comojogar
 fimenquanto
+senao 
+menu<-0
  fimse
 fimenquanto
-
+ate menu <> 1
+fimrepita
 
 //Dessa mensagem pra cima , ainda falta mexer//
 
