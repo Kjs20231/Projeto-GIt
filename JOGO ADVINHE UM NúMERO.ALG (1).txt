@@ -1,0 +1,395 @@
+  Algoritmo "Jogo Adivinha o Numero"
+
+Var
+AdivinhaONumero,teste, resultado,tentativa,contador, menu, jogador, resultado1, resultado2, ns:inteiro
+
+//procedimento menu
+procedimento menuprincipal
+ inicio
+
+ tempo 80
+ escreval ("|------------------------------------------------------------------|")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|           ||\)     (/|| ||||||| ||\\    || ||    ||              |")
+ escreval ("|           || \)   (/ || |||     || \\   || ||    ||              |")
+ escreval ("|           ||  \) (/  || ||||||| ||  \\  || ||    ||              |")
+ escreval ("|           ||   \|/   || ||      ||   \\ || ||    ||              |")
+ escreval ("|           ||         || ||||||| ||    \\|| ||||||||              |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escrevaL ("|------------------------------------------------------------------|")
+ escreval ("|                        |1| JOGAR                                 |")
+ escreval ("|                        |2| COMO JOGAR                            |")
+ escreval ("|                        |3| CREDÍTOS                              |")
+ escreval ("|------------------------------------------------------------------|")
+leia(menu)
+ fimprocedimento
+ 
+ procedimento comojogar
+ inicio
+  se (menu = 2) entao
+   escreval(" +-----------+-------------------------+----------+         ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             Â¦     COMO JOGAR   Â¦                    ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             +-------------------------+                    ")
+     //TECLE QUALQUER TECLA PARA RETORNAR
+   leia(teste)
+   limpatela
+   menuprincipal
+   comojogar
+   fimse
+
+ se (menu = 3) entao
+   escreval(" +-----------+-------------------------+----------+         ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             Â¦     CREDITOS    Â¦                    ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             +-------------------------+                    ")
+        //TECLE QUALQUER TECLA PARA RETORNAR
+   leia(teste)
+   limpatela
+   menuprincipal
+   comojogar
+ fimse
+ fimprocedimento
+
+Inicio
+
+
+tempo 60
+ escreval ("|---------------------------/-/------------------------------------|")
+ escreval ("|                                                                   |")
+ escreval ("|             ||||||||| ||||||||    ||||||   ||||||||               |")
+ escreval ("|                 |||    ||    ||   ||        ||    ||              |")
+ escreval ("|                 |||    ||    ||   ||  ||||  ||    ||              |")
+ escreval ("|                 |||    ||    ||   ||   ||   ||    ||              |")
+ escreval ("|            ||||||||    ||||||||   |||||||   ||||||||              |")
+ escreval ("|                                                                   |")
+ escreval ("|                                                                   |")
+ escreval ("|                                                                   |")
+ escreval ("|                                                                   |")
+ escreval ("| ||||||| ||||||\  ||| \)\       /(/ ||| ||\\    || ||   || ||||||| |")
+ escreval ("| ||   || ||    )) |||  \)\     /(/  ||| || \\   || ||   || |||     |")
+ escreval ("| ||||||| ||    )) |||   \)\   /(/   ||| ||  \\  || ||||||| ||||||| |")
+ escreval ("| ||   || ||    )) |||    \)\ /(/    ||| ||   \\ || ||   || |||     |")
+ escreval ("| ||   || ||||||/  |||     \( )/     ||| ||    \\|| ||   || ||||||| |")
+ escreval ("|                                                                   |")
+ escreval ("|                                                                   |")
+ escreval ("|                           ||||||||                                |")
+ escreval ("|                           ||    ||                                |")
+ escreval ("|                           ||    ||                                |")
+ escreval ("|                           ||    ||                                |")
+ escreval ("|                           ||||||||                                |")
+ escreval ("|                                                                   |")
+ escreval ("|                                                                   |")
+ escreval ("|   ||\\    || ||    || ||\)     (/|| ||||||| ||||||  ||||||||     |")
+ escreval ("|   || \\   || ||    || || \)   (/ || |||     ||  ||  ||    ||     | ")
+ escreval ("|   ||  \\  || ||    || ||  \) (/  || ||||||| ||||||  ||    ||    |")
+ escreval ("|   ||   \\ || ||    || ||   \|/   || |||     ||  \\  ||    ||    |")
+ escreval ("|   ||    \\|| |||||||| ||         || ||||||| ||   \\ ||||||||    |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|---------------------------/-/------------------------------------|")
+ leia(teste)
+ limpatela
+
+ menuprincipal
+
+ se (menu = 2) entao
+   escreval(" +-----------+-------------------------+----------+         ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             Â¦     COMO JOGAR   Â¦                    ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             +-------------------------+                    ")
+     //TECLE QUALQUER TECLA PARA RETORNAR
+   leia(teste)
+   limpatela
+   menuprincipal
+   enquanto menu <> 1 faca
+   comojogar
+   menuprincipal
+   comojogar
+   fimenquanto
+   fimse
+
+ se (menu = 3) entao
+   escreval(" +-----------+-------------------------+----------+         ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             Â¦     CREDITOS    Â¦                    ")
+   escreval("             Â¦                         Â¦                    ")
+   escreval("             +-------------------------+                    ")
+        //TECLE QUALQUER TECLA PARA RETORNAR
+   leia(teste)
+   limpatela
+   menuprincipal
+    enquanto menu <> 1 faca
+   comojogar
+   menuprincipal
+   comojogar
+   fimenquanto
+ fimse
+
+ escreval ("|------------------------------------------------------------------|")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|           ||\)     (/|| ||||||| ||\\    || ||    ||              |")
+ escreval ("|           || \)   (/ || |||     || \\   || ||    ||              |")
+ escreval ("|           ||  \) (/  || ||||||| ||  \\  || ||    ||              |")
+ escreval ("|           ||   \|/   || ||      ||   \\ || ||    ||              |")
+ escreval ("|           ||         || ||||||| ||    \\|| ||||||||              |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escreval ("|                                                                  |")
+ escrevaL ("|------------------------------------------------------------------|")
+ escreval ("|                        |1|  UM JOGADOR                                |")
+ escreval ("|                        |2|  DOIS JOGARORES                             |")
+ escreval ("|                        |3|  RETORNAR <-                             |")
+ escreval ("|------------------------------------------------------------------|")
+leia(jogador)
+
+//adiconar mais um jogador//
+se (jogador = 3) entao
+menuprincipal
+    enquanto menu <> 1 faca
+   comojogar
+   menuprincipal
+   fimenquanto
+ fimse
+
+//Dessa mensagem pra cima , ainda falta mexer//
+
+se (jogador=2) entao
+ AdivinhaONumero<- randi(100) 1 ate 100
+ ns<-AdivinhaONumero
+
+contador<-1
+tentativa<-10
+
+enquanto contador <= tentativa faca
+
+ escreval ("  Vez do jogador 1                             ")
+ escreval ("+------------------------------------------------------------+")
+ escreval ("¦      ||||||\  |||  |||||||   ||| |||||||||  |||||||        ¦")
+ escreval ("¦      ||    )) |||  ||        |||    |||     |||            ¦")
+ escreval ("¦      ||    )) |||  ||   |||| |||    |||     |||||||        ¦")
+ escreval ("¦      ||    )) |||  ||    ||  |||    |||     |||            ¦")
+ escreval ("¦      ||||||/  |||  ||||||||  |||    |||     |||||||        ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦                          ||||||                            ¦")
+ escreval ("¦                         || ||||                            ¦")
+ escreval ("¦                        |   ||||                            ¦")
+ escreval ("¦                            ||||                            ¦")
+ escreval ("¦                         |||||||||                          ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦  ||\\    || ||    || ||\|     |/|| ||||||| ||||||  ||||||||¦")
+ escreval ("¦  || \\   || ||    || || \|   |/ || |||     ||  ||  ||    ||¦")
+ escreval ("¦  ||  \\  || ||    || ||  \| |/  || ||||||  ||||||  ||    ||¦")
+ escreval ("¦  ||   \\ || ||    || ||   \|/   || |||     ||  \\  ||    ||¦")
+ escreval ("¦  ||    \\|| |||||||| ||         || ||||||| ||   \\ ||||||||¦")
+ escreval ("+------------------------------------------------------------+")
+
+leia(resultado1)
+contador<- contador + 1
+se( resultado1= AdivinhaONumero) entao
+escreval("  +------------------------------------------------------------------------------+")
+escreval("  ¦  |||||||  |||||||  ||||||   |||||||  |||||||   ||||||  |\\    ||  |||||||||  ¦")
+escreval("  ¦  ||   ||  ||   ||  ||  ||   ||   ||  ||    |)  ||      ||\\   ||  ||         ¦")
+escreval("  ¦  |||||||  |||||||  ||||||   |||||||  |||||||   ||||||  || \\  ||  |||||||||  ¦")
+escreval("  ¦  ||       ||   ||  ||  \\   ||   ||  ||    |)  ||      ||  \\ ||         ||  ¦")
+escreval("  ¦  ||       ||   ||  ||   \\  ||   ||  |||||||   ||||||  ||   \\||  |||||||||  ¦")
+escreval("  +------------------------+-------------------------+---------------------------+")
+escreval("                           ¦                         ¦                            ")
+escreval("                           ¦       VocÃª Acertou     ¦                            ")
+escreval("                           ¦  Numero Secreto:, (ns), ¦                            ")
+escreval("                           +-------------------------+                            ")
+
+fimalgoritmo
+senao
+     se (contador=10) entao
+escreval(" +------------------------------------------------+       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||||||||  ||    || ¦       ")
+escreval(" ¦  ||       ||  ||   ||  ||   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||    ||  ||    || ¦       ")
+escreval(" ¦  ||       ||  \\   ||  \\   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||   \\  ||   \\  ||||||||  |||||||| ¦       ")
+escreval(" +-----------+-------------------------+----------+       ")
+escreval("             ¦                         ¦                  ")
+escreval("             ¦    Fim Das Tentativas   ¦                  ")
+escreval("             ¦                         ¦                  ")
+escreval("             +-------------------------+                  ") //fazer interface//
+senao
+escreval(" +------------------------------------------------+       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||||||||  ||    || ¦       ")
+escreval(" ¦  ||       ||  ||   ||  ||   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||    ||  ||    || ¦       ")
+escreval(" ¦  ||       ||  \\   ||  \\   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||   \\  ||   \\  ||||||||  |||||||| ¦       ")
+escreval(" +-----------+-------------------------+----------+       ")
+escreval("             ¦                         ¦                  ")
+escreval("             ¦      Tente Novamente    ¦                  ")
+escreval("             ¦                         ¦                  ")
+escreval("             +-------------------------+                  ")
+
+fimse
+fimse
+
+
+ escreval ("  Vez do jogador 2                                          ")
+ escreval ("+------------------------------------------------------------+")
+ escreval ("¦      ||||||\  |||  |||||||   ||| |||||||||  |||||||        ¦")
+ escreval ("¦      ||    )) |||  ||        |||    |||     |||            ¦")
+ escreval ("¦      ||    )) |||  ||   |||| |||    |||     |||||||        ¦")
+ escreval ("¦      ||    )) |||  ||    ||  |||    |||     |||            ¦")
+ escreval ("¦      ||||||/  |||  ||||||||  |||    |||     |||||||        ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦                          ||||||                            ¦")
+ escreval ("¦                         || ||||                            ¦")
+ escreval ("¦                        |   ||||                            ¦")
+ escreval ("¦                            ||||                            ¦")
+ escreval ("¦                         |||||||||                          ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦  ||\\    || ||    || ||\|     |/|| ||||||| ||||||  ||||||||¦")
+ escreval ("¦  || \\   || ||    || || \|   |/ || |||     ||  ||  ||    ||¦")
+ escreval ("¦  ||  \\  || ||    || ||  \| |/  || ||||||  ||||||  ||    ||¦")
+ escreval ("¦  ||   \\ || ||    || ||   \|/   || |||     ||  \\  ||    ||¦")
+ escreval ("¦  ||    \\|| |||||||| ||         || ||||||| ||   \\ ||||||||¦")
+ escreval ("+------------------------------------------------------------+")
+
+leia(resultado2)
+limpatela
+contador<- contador + 1
+se( resultado2= AdivinhaONumero) entao
+escreval("  +------------------------------------------------------------------------------+")
+escreval("  ¦  |||||||  |||||||  ||||||   |||||||  |||||||   ||||||  |\\    ||  |||||||||  ¦")
+escreval("  ¦  ||   ||  ||   ||  ||  ||   ||   ||  ||    |)  ||      ||\\   ||  ||         ¦")
+escreval("  ¦  |||||||  |||||||  ||||||   |||||||  |||||||   ||||||  || \\  ||  |||||||||  ¦")
+escreval("  ¦  ||       ||   ||  ||  \\   ||   ||  ||    |)  ||      ||  \\ ||         ||  ¦")
+escreval("  ¦  ||       ||   ||  ||   \\  ||   ||  |||||||   ||||||  ||   \\||  |||||||||  ¦")
+escreval("  +------------------------+-------------------------+---------------------------+")
+escreval("                           ¦                         ¦                            ")
+escreval("                           ¦       VocÃª Acertou     ¦                            ")
+escreval("                           ¦  Numero Secreto:, (ns), ¦                            ")
+escreval("                           +-------------------------+                            ")
+
+fimalgoritmo
+senao
+     se (contador=11) entao
+escreval(" +------------------------------------------------+       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||||||||  ||    || ¦       ")
+escreval(" ¦  ||       ||  ||   ||  ||   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||    ||  ||    || ¦       ")
+escreval(" ¦  ||       ||  \\   ||  \\   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||   \\  ||   \\  ||||||||  |||||||| ¦       ")
+escreval(" +-----------+-------------------------+----------+       ")
+escreval("             ¦                         ¦                  ")
+escreval("             ¦    Fim Das Tentativas   ¦                  ")
+escreval("             ¦                         ¦                  ")
+escreval("             +-------------------------+                  ") 
+senao
+escreval(" +-------------------------------------------------+         ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||||||||  ||    ||  ¦         ")
+escreval(" ¦  ||       ||  ||   ||  ||   ||    ||  ||    ||  ¦         ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||    ||  ||    ||  ¦         ")
+escreval(" ¦  ||       ||  \\   ||  \\   ||    ||  ||    ||  ¦         ")
+escreval(" ¦  |||||||  ||   \\  ||   \\  ||||||||  ||||||||  ¦         ")
+escreval(" +-----------+-------------------------+-----------+         ")
+escreval("             ¦                         ¦                     ")
+escreval("             ¦      Tente Novamente    ¦                     ")
+escreval("             ¦                         ¦                     ")
+escreval("             +-------------------------+                     ")
+
+fimse
+fimse
+fimenquanto
+
+senao
+
+AdivinhaONumero<- randi(100)
+ns<-AdivinhaONumero //nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºmero passarÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ a ser aleatorio//
+//Esse ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o numero do jogo// 1 ate 100
+
+contador<-1
+tentativa<-10
+
+enquanto contador <= tentativa faca
+
+ escreval ("+------------------------------------------------------------+")
+ escreval ("¦      ||||||\  |||  |||||||   ||| |||||||||  |||||||        ¦")
+ escreval ("¦      ||    )) |||  ||        |||    |||     |||            ¦")
+ escreval ("¦      ||    )) |||  ||   |||| |||    |||     |||||||        ¦")
+ escreval ("¦      ||    )) |||  ||    ||  |||    |||     |||            ¦")
+ escreval ("¦      ||||||/  |||  ||||||||  |||    |||     |||||||        ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦                          ||||||                            ¦")
+ escreval ("¦                         || ||||                            ¦")
+ escreval ("¦                        |   ||||                            ¦")
+ escreval ("¦                            ||||                            ¦")
+ escreval ("¦                         |||||||||                          ¦")
+ escreval ("¦                                                            ¦")
+ escreval ("¦  ||\\    || ||    || ||\|     |/|| ||||||| ||||||  ||||||||¦")
+ escreval ("¦  || \\   || ||    || || \|   |/ || |||     ||  ||  ||    ||¦")
+ escreval ("¦  ||  \\  || ||    || ||  \| |/  || ||||||  ||||||  ||    ||¦")
+ escreval ("¦  ||   \\ || ||    || ||   \|/   || |||     ||  \\  ||    ||¦")
+ escreval ("¦  ||    \\|| |||||||| ||         || ||||||| ||   \\ ||||||||¦")
+ escreval ("+------------------------------------------------------------+")
+
+leia(resultado)
+contador<- contador + 1
+se( resultado= AdivinhaONumero) entao
+escreval("  +------------------------------------------------------------------------------+")
+escreval("  ¦  |||||||  |||||||  ||||||   |||||||  |||||||   ||||||  |\\    ||  |||||||||  ¦")
+escreval("  ¦  ||   ||  ||   ||  ||  ||   ||   ||  ||    |)  ||      ||\\   ||  ||         ¦")
+escreval("  ¦  |||||||  |||||||  ||||||   |||||||  |||||||   ||||||  || \\  ||  |||||||||  ¦")
+escreval("  ¦  ||       ||   ||  ||  \\   ||   ||  ||    |)  ||      ||  \\ ||         ||  ¦")
+escreval("  ¦  ||       ||   ||  ||   \\  ||   ||  |||||||   ||||||  ||   \\||  |||||||||  ¦")
+escreval("  +------------------------+-------------------------+---------------------------+")
+escreval("                           ¦                         ¦                            ")
+escreval("                           ¦       VocÃª Acertou     ¦                            ")
+escreval("                           ¦  Numero Secreto:, (ns), ¦                            ")
+escreval("                           +-------------------------+                            ")
+
+fimalgoritmo
+senao
+se (contador=11) entao
+escreval(" +------------------------------------------------+       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||||||||  ||    || ¦       ")
+escreval(" ¦  ||       ||  ||   ||  ||   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||    ||  ||    || ¦       ")
+escreval(" ¦  ||       ||  \\   ||  \\   ||    ||  ||    || ¦       ")
+escreval(" ¦  |||||||  ||   \\  ||   \\  ||||||||  |||||||| ¦       ")
+escreval(" +-----------+-------------------------+----------+       ")
+escreval("             ¦                         ¦                  ")
+escreval("             ¦    Fim Das Tentativas   ¦                  ")
+escreval("             ¦                         ¦                  ")
+escreval("             +-------------------------+                  ") 
+senao
+escreval(" +-------------------------------------------------+         ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||||||||  ||    ||  ¦         ")
+escreval(" ¦  ||       ||  ||   ||  ||   ||    ||  ||    ||  ¦         ")
+escreval(" ¦  |||||||  ||||||   ||||||   ||    ||  ||    ||  ¦         ")
+escreval(" ¦  ||       ||  \\   ||  \\   ||    ||  ||    ||  ¦         ")
+escreval(" ¦  |||||||  ||   \\  ||   \\  ||||||||  ||||||||  ¦         ")
+escreval(" +-----------+-------------------------+-----------+         ")
+escreval("             ¦                         ¦                     ")
+escreval("             ¦      Tente Novamente    ¦                     ")
+escreval("             ¦                         ¦                     ")
+escreval("             +-------------------------+                     ")
+
+
+fimse
+fimse
+fimenquanto
+fimse
+fimalgoritmo
+
+
+
